@@ -68,3 +68,6 @@ end
 
 gem 'devise'
 gem 'jwt'
+
+gem 'rack-cors'
+gem 'jsonapi-serializer'
