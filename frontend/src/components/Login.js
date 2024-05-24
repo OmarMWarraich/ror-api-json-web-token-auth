@@ -16,6 +16,7 @@ const Login = ({ setCurrUser, setShow }) => {
       if (!response.ok) throw data.error;
 
       localStorage.setItem("token", data.token);
+      localStorage.setItem("user", JSON.stringify(data.user));
       setCurrUser(data.user.email.split("@")[0]);
     } catch (error) {
       console.log("error", error);

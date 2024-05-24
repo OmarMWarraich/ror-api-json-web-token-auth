@@ -9,6 +9,7 @@ const Logout = ({ setCurrUser }) => {
         },
       });
       localStorage.removeItem("token");
+      localStorage.removeItem("user");
       setCurrUser(null);
     } catch (error) {
       console.log("error", error);
